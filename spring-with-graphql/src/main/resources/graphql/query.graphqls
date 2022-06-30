@@ -1,0 +1,28 @@
+type Cliente{
+    id:ID
+    nome:String
+    email:String
+}
+
+type Produto{
+    id:ID
+    nome:String
+    valor:Float
+}
+
+type Compra{
+    id:ID
+    quantidade:Int
+    status:String
+    cliente:Cliente
+    produto:Produto
+}
+
+type Query{
+    cliente(id:ID):Cliente
+    clientes:[Cliente]
+    produto(id:ID):Produto
+    produtos:[Produto]
+    compra(id:ID):Compra
+    compras:[Compra]
+}
