@@ -1,0 +1,8 @@
+type Mutation{
+    saveCliente(id:ID, nome:String, email:String):Cliente
+    deleteCliente(id:ID):Boolean
+    saveProduto(id:ID, nome:String, valor:Float):Produto
+    deleteProduto(id:ID):Boolean
+    saveCompra(id:ID, quantidade:Int, status:String, idcliente:Int, idproduto:Int):Compra
+    deleteCompra(id:ID):Boolean
+}
